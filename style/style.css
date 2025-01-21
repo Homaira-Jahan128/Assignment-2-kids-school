@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Shared Style */
+.quicksand {
+    font-family: "Quicksand", serif;
+}
+
+.background-primary{
+    background-image: url(../assets/bg.png);
+}
+
+.display-flex{
+    display: flex;
+}
+
+.color-orange{
+    color: #FEA301;
+}
+
+.color-skyBlue{
+    color: #01ACFD;
+}
+
+.color-cyan{
+    color: #05D4DF;
+}
+
+.color-lightBlue{
+    color: #5D58EF;
+}
+
+.button-primary{
+    background-color: #FEA301;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 15px 60px;
+    border: none;
+    color: white;
+}
+
+.bottom-line{
+    display: none;
+}
+
+/* Navbar Style */
+.navbar{
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 62px;
+    height: 62px;
+}
+
+.school{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-feature ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-feature li{
+    list-style: none;
+}
+
+.nav-anchor{
+    text-decoration: none;
+    font-size:1.25rem;
+    padding: 16px 32px;
+    font-weight: 500;
+}
+
+#home{
+    font-weight: bold;
+}
+
+.dropdown{
+    display: none;
+}
+
+/* Banner Style */
+
+.banner-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-detail, .banner-picture {
+    max-width: 50%;
+}
+
+.banner-picture {
+    margin: 0px 0px;;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.banner-description{
+    font-size: 1.25rem;
+    /* margin: 24px auto 24px auto; */
+}
+
+.enroll-button{
+    background-color: black;
+}
+
+/* curiculum-section */
+
+.curiculum-title{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.curiculum-section{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    height: 100%;
+}
+
+.curiculum-bar{
+    padding: 30px;
+    width: 340px;
+    border-radius: 18px;
+    margin: 20px;
+    /* background: linear-gradient(180.00deg, rgba(222, 245, 255, 1), rgba(7, 2, 17, 0) 70%); */
+}
+
+#bar-1{
+    background: linear-gradient(180.00deg, rgba(222, 245, 255, 1), rgba(7, 2, 17, 0) 70%);
+}
+#bar-2{
+    background: linear-gradient(180.00deg, rgba(255, 244, 220, 1), rgba(7, 2, 17, 0) 70%);
+}
+#bar-3{
+    background: linear-gradient(180.00deg, rgba(242, 232, 255, 1), rgba(7, 2, 17, 0) 70%);
+}
+
+.read-more{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.round-button{
+    text-align: center;
+}
+
+.next-btn{
+    background-color: #FEA301;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    color: white;
+    margin: 5px;
+}
+
+
+@media screen and ( max-width: 576px) {
+    /* Banner responsive */
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid  #FEA301;
+        /* padding: 16px; */
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    /* .bottom-line{
+        display: block;
+        background-color: #FEA301;
+        width: 100%;
+    } */
+
+    .banner-01{
+        flex-direction: column-reverse;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .nav-feature,
+    .contact,
+    .nav-title{
+        display: none;
+    }
+
+    .logo{
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown-button{
+        background-color: white;
+        padding: 15px 15px;
+        border: none;
+    }
+
+    .banner-picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+
+    }
+
+    .banner-detail{
+        max-width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .banner-picture img{
+        width: 180%;
+    }
+
+    .banner-title{
+        font-size: 2rem;
+    }   
+
+    .banner-description{
+        font-size: 1rem;
+    }
+    body{
+        margin: 0;
+    }
+
+    /* Curiculum responsive */
+
+    .curiculum-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .curiculum-bar{
+        width: 80%;
+    }
+
+    .round-button{
+        display: none;
+    }
+}
